@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.back{
+    width: 100%;
+    height: 120vh;
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    position: relative;
+}
+
+.back div{
+    position: relative;
+    display: inline-block;
+}
+
+.sun{
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 300px);
+}
+
+.sun img{
+    width: 500px;
+    z-index: 2;
+}
+
+.mercury{
+    position: absolute;
+    width: 40px;
+    top: -250px;
+    left: 200px;
+    z-index: 2;
+    animation: mer 4s infinite;
+}
+
+.mercury img{
+    width: 60%;
+}
+
+@keyframes mer {
+    0% { top: -250px; left: 200px;  z-index: 0; }
+    12.5% { top: -150px; left: 0px; z-index: 1; }
+    25% { top: 50px; left: -100px; z-index: 2; }
+    37.5% { top: 250px; left: 0px; z-index: 2; }
+    50% { top: 350px; left: 200px; z-index: 2; }
+    62.5% { top: 250px; left: 400px; z-index: 2; }
+    75% { top: 50px; left: 500px; z-index: 2; }
+    87.5% { top: -150px; left: 400px; z-index: 1; }
+    100%{ top: -250px; left: 200px; z-index: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
